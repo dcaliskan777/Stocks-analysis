@@ -74,6 +74,9 @@ In order to keep originality of the sheet of the year, the following sentences a
  
 ### Challenges And Excitements
 
+First I conseidered the weakness of the former macro, it was the nested for-loops. It was written in the step by step explanation of the project, we might use tickerIndex for indexing tickers. It was important clue for me to use just one for-loop. I might use tickerIndex for the function of outher loop in the former macro. But, in the steps of the project, two for loops were talked about; it made me quite confused. I was still thinking that there would be a way to decrease number of steps in the script by using just one for loop. I thought a lot, may be 2 hours, without doing anything but planning the code in my mind with just one for loop. At the end I found the way, I was happy with a quite worry, I ran the subroutine, "Run-time error '9'" appered in the window. I was disappointed. I had no idea what kind of error this is. Would it be a logical mistake? I think, the most difficult part in a programming is to encounter a logical mistake, it is very difficult to find out the logical mistake sometimes; sometimes it is needed to change completly the paradighm. I googled and find out the following:
+
+![Run-time Error '9'](https://user-images.githubusercontent.com/99373486/155890334-9af6f0d5-3a15-4afa-ba87-e883383c5ddb.png)
 
 ## Results
 
