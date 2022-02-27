@@ -5,7 +5,7 @@
 In this project a stock analysis was made by using two vba scripts which are created for a data set which has a dozon of stocks:
 Fisrt script, called in this work as "yearValueAnalysis", is the one which is first comes to mind, it is easy to think but takes longer time to execute. Second script, called in this work as "yearValueAnalysisRefactored" is smarter, more efficient but it requires deaper thinking. Sometimes it is sufficient to solve the problem but sometimes the problem requirs to solve it efficiently. In this scenario, there was just a dozon of stocks, so it might be analysed in any way. But, if there would be thousands stocks, an efficient way should be used.  
 
-Accomplishing a task more sufficiently in coding is called **refactoring** which is crucial issue especially in data analysis. Refactoring does not mean adding a new functionality to the script; it is redesigning the script in such a way that it has fewer steps or it uses less memory or it has improved logic to help users to read more easily. These are three main factors of efficiency of a script. In this work, the script "yearValueAnalysis" was refactored in two ways: fewer steps and improved logic, so that "yearValueAnalysisRefactored" was created.
+Accomplishing a task more sufficiently in coding is called **refactoring** which is crucial issue especially in data analysis. Refactoring does not mean adding a new functionality to the script; it is redesigning the script in such a way that it has fewer steps or it uses less memory or it has improved logic to help users to read more easily. These are three main factors of efficiency of a script. In this work, the script "yearValueAnalysis" was refactored in two ways: fewer steps and improved logic, so that "yearValueAnalysisRefactored" was created. The documents ![VBA_Challenge.xlsm](.\VBA_Challenge.xlsm) and ![VBA_Challenge.vbs](.\VBA_Challenge.vbs) are documents concerning the project.
 
  In the report; the macro "yearValueAnalysisRefactored" is analyzed, challenges and excitements are shortly narrated. The improved efficiency of the subroutine, in terms of elapsed running time,is shown by using pictures on which elapsed time of both subroutines are displayed, for bothe yeras. And finally, advantages and disadvantages of refactoring are discussed in a summary.
 
@@ -78,15 +78,54 @@ First I conseidered the weakness of the former macro, it was the nested for-loop
 
 ![Run-time Error '9'](https://user-images.githubusercontent.com/99373486/155890334-9af6f0d5-3a15-4afa-ba87-e883383c5ddb.png)
 
-## Results
+This was easy to fixed by debugging, I did immadiately. Thank to Google! I was lucky, it was not logical mistake but this does not mean there no logical mistake. I was anxious about it. I ran the macro again in this emaotions. It was success, it was exciting!
 
-![](./resources/Outcomes_vs_Goals.png)
+> I see,
+> 
+> To look is different than to see,
+> 
+> To know is different than to understand.
+> 
+> One looks, but does not see,
+> 
+> One knows, but does not understand.
+> 
+> The secret is in the examining,
+> 
+> Examine, so you will see and understand.
+>
+>
+> Who accomplishes is the one who sees the end at the beginning,
+> 
+> The secret of this is planning, planning and planning!
+
+## Results
 
 ### Discussions Of Efficiency Of Refactored Script With The Year 2017
 
+ The outcomes of the all stock analysis for the year 2017 is the following:
+ 
+![](./resources/allStocks2017.png)
+
+In the following, the secreen shot of elapsed times of the first and the refactored codes for the year 2017 are displayed.
+
+![](./resources/VBA_Challenge_2017.png)
+
+In the picture, elapsed time of the first macro is 0.8984375 seconds and that of refactored one is 0.3242188 seconds. By a quick calculation the percentage decrease is around 64% (not bed right?).
+
+
+
 ### Discussions Of Efficiency Of Refactored Script With The Year 2018
 
+The outcomes of the all stock analysis for the year 2018 is the following:
 
+![](./resources/allStocks2018.png)
+
+In the following, the secreen shot of elapsed times of the first and the refactored codes for the year 2018 are displayed.
+
+![](./resources/VBA_Challenge_2018.png)
+
+In the picture, elapsed time of the first macro is 0.9267812 seconds and that of refactored one is 0.328125 seconds. By a quick calculation the percentage decrease is around 65%.
 
 ## Summary
 
