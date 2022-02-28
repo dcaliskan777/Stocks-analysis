@@ -5,9 +5,9 @@
 In this project a stock analysis was made by using two vba scripts which are created for a data set which has a dozon of stocks:
 Fisrt script, called in this work as "yearValueAnalysis", is the one which is first comes to mind, it is easy to think but takes longer time to execute. Second script, called in this work as "yearValueAnalysisRefactored" is smarter, more efficient but it requires deaper thinking. Sometimes it is sufficient to solve the problem but sometimes the problem requirs to solve it efficiently. In this scenario, there was just a dozon of stocks, so it might be analysed in any way. But, if there would be thousands stocks, an efficient way should be used.  
 
-Accomplishing a task more sufficiently in coding is called **refactoring** which is crucial issue especially in data analysis. Refactoring does not mean adding a new functionality to the script; it is redesigning the script in such a way that it has fewer steps or it uses less memory or it has improved logic to help users to read more easily. These are three main factors of efficiency of a script. In this work, the script "yearValueAnalysis" was refactored in two ways: fewer steps and improved logic, so that "yearValueAnalysisRefactored" was created. The documents ![VBA_Challenge.xlsm](.\VBA_Challenge.xlsm) and ![VBA_Challenge.vbs](.\VBA_Challenge.vbs) are documents concerning the project.
+Accomplishing a task more sufficiently in coding is called **refactoring** which is crucial issue especially in data analysis. Refactoring does not mean adding a new functionality to the script; it is redesigning the script in such a way that it has fewer steps or it uses less memory or it has improved logic to help users to read more easily. These are three main factors of efficiency of an algorithm. In this work, the macro "yearValueAnalysis" was refactored in two ways: fewer steps and improved logic, so that "yearValueAnalysisRefactored" was created. The documents ![VBA_Challenge.xlsm](.\VBA_Challenge.xlsm) and ![VBA_Challenge.vbs](.\VBA_Challenge.vbs) are data set with outcomes and macros, and target vba codes respectively.
 
- In the report; the macro "yearValueAnalysisRefactored" is analyzed, challenges and excitements are shortly narrated. The improved efficiency of the subroutine, in terms of elapsed running time,is shown by using pictures on which elapsed time of both subroutines are displayed, for bothe yeras. And finally, advantages and disadvantages of refactoring are discussed in a summary.
+ In the report; the macro "yearValueAnalysisRefactored" is analyzed, challenges and excitements are shortly narrated. The improved efficiency of the subroutine, in terms of elapsed running time,is shown by using pictures on which elapsed time of both subroutines are displayed, for both years. And finally, advantages and disadvantages of refactoring are discussed in a summary.
 
 ### Purpose
 
@@ -125,7 +125,17 @@ In the following, the secreen shot of elapsed times of the first and the refacto
 
 ![](./resources/VBA_Challenge_2018.png)
 
-In the picture, elapsed time of the first macro is 0.9267812 seconds and that of refactored one is 0.328125 seconds. By a quick calculation the percentage decrease is around 65%.
+In the picture, elapsed time of the first macro is 0.9267812 seconds and that of refactored one is 0.328125 seconds. By a quick calculation the percentage decrease is around 65%. 
+
+It was expected that the percentage decreases for two years were the same, becaause date sets containing both years are of similar characteristics and they are of the same size. But there is a small difference between them. This might be due to the length of numbers in the data sets.
+
+The comparison of elapsed times of macros for both years can be seen in the following table:
+
+| Years        |Elapsed time of the first macro (in second)| Elapsed time of the refactored macro (in second)| Percentage decrease |
+|:-----:       |:-----:                                    |:-----:                                          |:-----:              |
+| 2017         |0.8984375                                  |0.3242188                                        |64%                  |
+|2018          |0.9267812                                  |0.328125                                         |65%                  |
+
 
 ## Summary
 
