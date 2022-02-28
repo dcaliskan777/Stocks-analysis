@@ -48,7 +48,7 @@ The main body of the code consists of only one for loop and only one simple cond
 >
 > End If
 
-This is the central part of the code. If the statement "Cells(j, 1).Value = currentTicker" is False then j'th row is the first row of the next ticker and j-1'th row is the last row of the previous one. This allows us to identify all olutcomes that we need, import them in correct cells and initilize the variables correctly for the next ticker. Notes that the order of sentences after "Else" is important.
+This is the central part of the code. If the statement "Cells(j, 1).Value = currentTicker" is False then *j'th* row is the first row of the next ticker and *j-1'th* row is the last row of the previous one. This allows us to identify all olutcomes that we need, import them in correct cells and initilize the variables correctly for the next ticker. Notes that the order of sentences after "Else" is important.
 
 This reasoning might create a problem in the last row (last row of the last ticket). In order to avoid this problem I decided to add a fake row at the end of the sheet of the selected year as
 
@@ -74,11 +74,11 @@ In order to keep originality of the sheet of the year, the following sentences a
  
 ### Challenges And Excitements
 
-First I conseidered the weakness of the former macro, it was the nested for loops. It was written in the step by step explanation of the project, we might use tickerIndex for indexing tickers. It was important clue for me to use just one for-loop. I might use tickerIndex for the function of outher loop in the former macro. But, in the steps of the project, two for loops were talked about; it made me quite confused. I was still thinking that there would be a way to decrease number of steps in the script by using just one for loop. I thought a lot, may be 2 hours, without doing anything but planning the code in my mind with just one for loop. At the end I found the way, I was happy with a quite worry, I ran the subroutine, "Run-time error '9'" appered in the window. I was disappointed. I had no idea what kind of error this is. Would it be a logical mistake? I think, the most difficult part in a programming is to encounter a logical mistake, it is very difficult to find out the logical mistake sometimes; sometimes it is needed to change completly the paradighm. I googled and find out the following:
+First I considered the weakness of the former macro, it was the nested for loops. It was written in the step by step explanation of the project, we might use tickerIndex for indexing tickers. It was important clue for me to use just one for loop. I might use tickerIndex for the function of outher loop in the former macro. But, in the steps of the project, two for loops were talked about; it made me quite confused. I was still thinking that there would be a way to decrease number of steps in the script by using just one for loop. I thought a lot, may be 2 hours, without doing anything but planning the code in my mind with just one for loop. At the end I found the way, I was happy with a quite worry, I ran the subroutine, "Run-time error '9'" appered in the window. I was disappointed. I had no idea what kind of error this is. Would it be a logical mistake? I think, the most difficult part in a programming is to encounter a logical mistake, it is very difficult to find out the logical mistake sometimes; sometimes it is needed to change completly the paradighm. I googled and find out the following:
 
 ![Run-time Error '9'](https://user-images.githubusercontent.com/99373486/155890334-9af6f0d5-3a15-4afa-ba87-e883383c5ddb.png)
 
-This was easy to fixed by debugging, I did immadiately. Thank to Google! I was lucky, it was not logical mistake but this does not mean there no logical mistake. I was anxious about it. I ran the macro again in this emaotions. It was success, it was exciting!
+This was easy to fixed by debugging, I did immadiately. Thank to Google! I was lucky, it was not logical mistake but this does not mean there no logical mistake. I was anxious about it. I ran the macro again in this emotions. It was success, it was exciting!
 
 > I see,
 > 
@@ -95,7 +95,7 @@ This was easy to fixed by debugging, I did immadiately. Thank to Google! I was l
 > Examine, so you will see and understand.
 >
 >
-> Who accomplishes is the one who sees the end at the beginning,
+> Who accomplishes is who sees the end at the beginning,
 > 
 > The secret of this is planning, planning and planning!
 
@@ -127,7 +127,7 @@ In the following, the secreen shot of elapsed times of the first and the refacto
 
 In the picture, elapsed time of the first macro is 0.9267812 seconds and that of refactored one is 0.328125 seconds. By a quick calculation the percentage decrease is around 65%. 
 
-It was expected that the percentage decreases for two years were the same, becaause date sets containing both years are of similar characteristics and they are of the same size. But there is a small difference between them. This might be due to the length of numbers in the data sets.
+It was expected that the percentage decreases for two years were the same, becaause date sets of both years are of similar characteristics and they are of the same size. But there is a small difference between them. This might be due to the length of numbers in the data sets.
 
 The comparison of elapsed times of macros for both years can be seen in the following table:
 
