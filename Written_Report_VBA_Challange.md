@@ -11,14 +11,14 @@ Accomplishing a task more sufficiently in coding is called **refactoring** which
 
 ### Purpose
 
-The purpose of the project is to examine how the refactoring is crucial in coding.
+The purpose of the project is to understand efficiency in coding.
 
 
 ## Analysis Of The Script "yearValueAnalysisRefactored", Challenges And Excitements
 
 ### Analysis Of The Script "yearValueAnalysisRefactored"
 
-The main body of the script consists of only one for loop and only one simple conditional. Simple conditional means here, the structure of "If ...Then ...Else...End If", no ElseIf statement. But, former script contains a nested for loops and several conditionals with ElseIf satatements; these two were origin of the problem. I examined them and pointed out that although an individual ticker is contained around 251 rows in average, for the analysis of stock corresponded to that ticker program is running entirely, to rearch in 3012 rows; and since first row of any ticker is just after last row of the previous ticker, we can retain them both simultaneously and used them seperately.This is the main reasoning in the macro. Therefore I came up with using only one for loop and the following conditional:
+The main body of the code consists of only one for loop and only one simple conditional. Simple conditional means here, the structure of "If ...Then ...Else...End If", no ElseIf statement. But, former code contains a nested for loops and several conditionals with ElseIf satatements; these two were origin of the problem. I examined them and pointed out that although an individual ticker is contained around 251 rows in average, for the analysis of stock corresponded to that ticker, the program is running entirely to search in all of 3012 rows; and since first row of any ticker and last row of the previous ticker are successive, we can retain them both simultaneously and used them seperately.This is the main reasoning in the macro. Therefore I came up with using only one for loop and the following conditional:
 
 > If Cells(j, 1).Value = currentTicker Then
 >
@@ -48,7 +48,7 @@ The main body of the script consists of only one for loop and only one simple co
 >
 > End If
 
-This is the central portion of the script. If the statement "Cells(j, 1).Value = currentTicker" is False then j'th row is the first row of the next ticker and j-1'th row is the last row of the previous one. This allows us to identify all olutcomes that we need, import them in correct cells and initilize the variables correctly for the next ticker. Notes that the order of sentences after "Else" is important.
+This is the central part of the code. If the statement "Cells(j, 1).Value = currentTicker" is False then j'th row is the first row of the next ticker and j-1'th row is the last row of the previous one. This allows us to identify all olutcomes that we need, import them in correct cells and initilize the variables correctly for the next ticker. Notes that the order of sentences after "Else" is important.
 
 This reasoning might create a problem in the last row (last row of the last ticket). In order to avoid this problem I decided to add a fake row at the end of the sheet of the selected year as
 
@@ -74,7 +74,7 @@ In order to keep originality of the sheet of the year, the following sentences a
  
 ### Challenges And Excitements
 
-First I conseidered the weakness of the former macro, it was the nested for-loops. It was written in the step by step explanation of the project, we might use tickerIndex for indexing tickers. It was important clue for me to use just one for-loop. I might use tickerIndex for the function of outher loop in the former macro. But, in the steps of the project, two for loops were talked about; it made me quite confused. I was still thinking that there would be a way to decrease number of steps in the script by using just one for loop. I thought a lot, may be 2 hours, without doing anything but planning the code in my mind with just one for loop. At the end I found the way, I was happy with a quite worry, I ran the subroutine, "Run-time error '9'" appered in the window. I was disappointed. I had no idea what kind of error this is. Would it be a logical mistake? I think, the most difficult part in a programming is to encounter a logical mistake, it is very difficult to find out the logical mistake sometimes; sometimes it is needed to change completly the paradighm. I googled and find out the following:
+First I conseidered the weakness of the former macro, it was the nested for loops. It was written in the step by step explanation of the project, we might use tickerIndex for indexing tickers. It was important clue for me to use just one for-loop. I might use tickerIndex for the function of outher loop in the former macro. But, in the steps of the project, two for loops were talked about; it made me quite confused. I was still thinking that there would be a way to decrease number of steps in the script by using just one for loop. I thought a lot, may be 2 hours, without doing anything but planning the code in my mind with just one for loop. At the end I found the way, I was happy with a quite worry, I ran the subroutine, "Run-time error '9'" appered in the window. I was disappointed. I had no idea what kind of error this is. Would it be a logical mistake? I think, the most difficult part in a programming is to encounter a logical mistake, it is very difficult to find out the logical mistake sometimes; sometimes it is needed to change completly the paradighm. I googled and find out the following:
 
 ![Run-time Error '9'](https://user-images.githubusercontent.com/99373486/155890334-9af6f0d5-3a15-4afa-ba87-e883383c5ddb.png)
 
