@@ -139,4 +139,31 @@ The comparison of elapsed times of macros for both years can be seen in the foll
 
 ## Summary
 
+Refactoring improves logic and design of the code, makes the code easier to understand, saves memory, saves time and helps finding bugs. These may be taken as advantages of refactoring. Original code is written in a way which comes to mind immadiately, so it may contain repitations, naught steps, it takes longer time to execute. Refactoring eliminates these naught steps. Bugs, sometimes, may be dangerous, even disaster in some applications. So finding bugs is a crucial advantiage of factoring.
+
+It might be risky when the existing code does not have any proper test, when the developer does not diagnose the real problem. It might be difficult to think so that might take long time to write the code. These are some disadventages of the refactoring.
+
+Refactoring in vba, especially in working in dataset with large size, implies fewer steps so shorter the the elapsed time for running, improves the logic so that is easy to raed. It helps to find bugs so that we can clean bugs. Bugs can make unexpected changes in the data set which may concludes wrong outputs. If the existing subroutine does not have a proper test, the test correctness of output in refactored might be big challenge. This can be assumed to be a disadventage for refactoring in vba. An other challenge is the place where the developer activates a certain sheet in a vba code. There are two functions of activating a sheet: calling information from the sheet and incerting information into the sheet. These might be confuced, so that the original data might be changed. To find correct place to activate correct sheet is more difficult in factoring than original code.
+
+The advantages and disadvantages of refactored and existing codes can be shown in the following table in a compact and comparible way:
+
+|.                  | Existing macro         | Refactored macro                 |
+|:-----:            |:-----                  |:-----                            |
+|**Advantages**     |Easey to think          |Easy to read                      |
+|                   |Easy to write           |Has improved design               |  
+|                   | Straight forward       |Has fewer steps                   |
+|                   |                        |Shorter running time              |
+|                   |                        |Uses less memory (sometimes)      |
+|                   |                        |Easy to find bugs                 |
+|                   |                        |                                  |
+|**Desadvantages**  |Difficult to read       |Requires deeper thinking          | 
+|                   |Has involved design     | Might take longer time to write  | 
+|                   |Has more steps          |Might be expensive (in some case) |
+|                   |longer running time     |                                  |
+|                   |Might use more memory   |                                  |
+|                   |Might have naught steps |
+ 
+
+
+
 
